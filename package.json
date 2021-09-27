@@ -6,5 +6,14 @@
   "repository": "https://github.com/killerchip/typescript-starter-template.git",
   "author": "Costas Ioannou <ioannou.dev@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.1",
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.13",
+    "rimraf": "^3.0.2"
+  }
 }
