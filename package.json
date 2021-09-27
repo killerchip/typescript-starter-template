@@ -7,6 +7,11 @@
   "author": "Costas Ioannou <ioannou.dev@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "develop": "concurrently 'tsc --watch' 'nodemon -q dist/index.js'",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
     "typescript": "^4.4.3"
   },
