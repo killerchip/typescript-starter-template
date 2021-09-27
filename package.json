@@ -1,0 +1,10 @@
+{
+  "name": "typescript-starter-template",
+  "version": "0.0.1",
+  "description": "A simple typescript starter app",
+  "main": "dist/index.ts",
+  "repository": "https://github.com/killerchip/typescript-starter-template.git",
+  "author": "Costas Ioannou <ioannou.dev@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
