@@ -1,28 +1,31 @@
 {
-  "name": "typescript-starter-template",
-  "version": "0.0.1",
-  "description": "A simple typescript starter app",
-  "main": "dist/index.ts",
-  "repository": "https://github.com/killerchip/typescript-starter-template.git",
-  "author": "Costas Ioannou <ioannou.dev@gmail.com>",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "develop": "nodemon",
-    "start": "yarn build && node dist/index.js",
-    "lint": "tsc --noEmit && eslint ./ --ext .js,.ts,.tsx"
-  },
-  "dependencies": {
-    "typescript": "^4.4.3"
-  },
-  "devDependencies": {
-    "@types/node": "^16.10.1",
-    "@typescript-eslint/eslint-plugin": "^4.32.0",
-    "@typescript-eslint/parser": "^4.32.0",
-    "eslint": "^7.32.0",
-    "nodemon": "^2.0.13",
-    "rimraf": "^3.0.2",
-    "ts-node": "^10.3.0"
-  }
+    "name": "typescript-starter-template",
+    "version": "0.0.1",
+    "description": "A simple typescript starter app",
+    "main": "dist/index.ts",
+    "repository": "https://github.com/killerchip/typescript-starter-template.git",
+    "author": "Costas Ioannou <ioannou.dev@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "develop": "nodemon",
+        "start": "yarn build && node dist/index.js",
+        "lint": "tsc --noEmit && eslint ./ --ext .js,.ts,.tsx",
+        "pretty": "prettier --write ."
+    },
+    "dependencies": {
+        "typescript": "^4.4.3"
+    },
+    "devDependencies": {
+        "@types/node": "^16.10.1",
+        "@typescript-eslint/eslint-plugin": "^4.32.0",
+        "@typescript-eslint/parser": "^4.32.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "nodemon": "^2.0.13",
+        "prettier": "2.4.1",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.3.0"
+    }
 }
