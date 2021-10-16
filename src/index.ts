@@ -1,2 +1,2 @@
-const message = 'Hello World!';
-console.log(message);
+import { getMessage } from './message/message';
+console.log(getMessage());

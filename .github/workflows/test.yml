@@ -1,11 +1,11 @@
-name: Eslint check
+name: Run tests
 on:
     pull_request:
         branches:
             - master
 
 jobs:
-    eslint:
+    test:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
@@ -13,4 +13,4 @@ jobs:
               with:
                   node-version: 12.x
             - run: yarn
-            - run: yarn lint
+            - run: yarn test
