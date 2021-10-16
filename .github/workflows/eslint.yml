@@ -1,12 +1,11 @@
-name: Eslint and Pretty check
+name: Eslint check
 on:
     pull_request:
         branches:
             - master
 
 jobs:
-    echo:
-        name: run eslint
+    eslint:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1

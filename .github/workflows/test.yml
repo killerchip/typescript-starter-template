@@ -5,8 +5,7 @@ on:
             - master
 
 jobs:
-    echo:
-        name: run tests
+    test:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
