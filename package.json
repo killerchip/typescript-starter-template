@@ -12,7 +12,9 @@
         "develop": "nodemon",
         "start": "yarn build && node dist/index.js",
         "lint": "tsc --noEmit && eslint ./ --ext .js,.ts,.tsx",
-        "pretty": "prettier --write ."
+        "pretty": "prettier --write .",
+        "prepare": "husky install",
+        "pre-commit": "pretty-quick --staged"
     },
     "dependencies": {
         "typescript": "^4.4.3"
@@ -24,8 +26,10 @@
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.2",
         "nodemon": "^2.0.13",
         "prettier": "2.4.1",
+        "pretty-quick": "^3.1.1",
         "rimraf": "^3.0.2",
         "ts-node": "^10.3.0"
     }
