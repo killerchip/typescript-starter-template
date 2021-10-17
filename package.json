@@ -8,16 +8,17 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "build": "rimraf dist && webpack",
         "develop": "nodemon",
         "start": "yarn build && node dist/index.js",
+        "test": "jest",
         "lint": "tsc --noEmit && eslint ./ --ext .js,.ts,.tsx",
         "pretty": "prettier --write .",
-        "prepare": "husky install",
-        "pre-commit": "pretty-quick --staged",
-        "customize": "yarn mrm --dir ./.mrm customize -i",
         "update": "ncu -u",
-        "test": "jest"
+        "customize": "yarn mrm --dir ./.mrm customize -i",
+        "detach": "git remote remove origin && yarn customize",
+        "build": "rimraf dist && webpack",
+        "prepare": "husky install",
+        "pre-commit": "pretty-quick --staged"
     },
     "dependencies": {
         "typescript": "^4.4.4"
