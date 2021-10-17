@@ -94,3 +94,10 @@ yarn test
 ```
 
 to launch testing. It will also create code coverage report.
+
+## Github actions
+
+The project also comes with two github actions pre-configured. When a pull-request created for merging to `master` it will launch commands:
+
+-   `yarn lint`
+-   `yarn test`
