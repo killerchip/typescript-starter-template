@@ -8,7 +8,7 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "build": "rimraf dist && tsc",
+        "build": "rimraf dist && webpack",
         "develop": "nodemon",
         "start": "yarn build && node dist/index.js",
         "lint": "tsc --noEmit && eslint ./ --ext .js,.ts,.tsx",
@@ -40,6 +40,9 @@
         "pretty-quick": "^3.1.1",
         "rimraf": "^3.0.2",
         "ts-jest": "^27.0.7",
-        "ts-node": "^10.3.0"
+        "ts-loader": "^9.2.6",
+        "ts-node": "^10.3.0",
+        "webpack": "^5.58.2",
+        "webpack-cli": "^4.9.0"
     }
 }
